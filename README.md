@@ -1,4 +1,4 @@
-## Mantis
+## Morph
 
 _An beautifull, elegant and simple Veronique's status page — Let's monitoring them all._
 
