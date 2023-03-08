@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout title="Status page">
     <div class="text-center items-center justify-center">
         <p class="text-5xl font-extrabold font-display tracking-wide">👻M<span class="animate animate-ping text-pink-800">O</span>RPH.</p>
         <p class="text-3xl text-gray-200 tracking-wide font-montreal mt-5">
@@ -10,18 +10,19 @@
     </div>
     <div class="mb-10 mt-10">
         @foreach ($website as $web)
-            <ul class="border my-4 p-4 bg-white/20  text-white border-transparent bg-opacity-50 text-lg font-thin rounded-lg">
-                <li class="flex align-middle justify-between">
-                    <span class="font-extrabold text-md font-display tracking-wide uppercase">
+            <ul class="border my-4 p-4 bg-white/20 text-white border-transparent bg-opacity-50 text-lg font-thin rounded-lg">
+                <li class="flex justify-between">
+                    <span class="font-extrabold py-2 px-1 text-md font-display tracking-wide uppercase">
                         {{ $web->name }} 
-                        <span class="italic text-md underline font-montreal"> 
+                        <br>
+                        <span class="text-md underline font-montreal"> 
                             <a href="{{ $web->url }}" target="blank">
                                 {{ $web->url }}
                             </a>
                         </span>
                     </span>
                     @if($web->active)
-                        <span class="bg-green-200/80 backdrop-blur-sm border-green-300 border font-montreal text-green-900 px-4 py-1 rounded-xl">                    
+                        <span class="bg-green-200/80 justify-center items-center my-auto backdrop-blur-sm border-green-300 border font-montreal text-green-900 px-4 py-1 rounded-xl">                    
                             Operational &nbsp; &#10003;
                         <span>
                     @else

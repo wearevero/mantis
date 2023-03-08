@@ -48,7 +48,7 @@ Untuk menjalankan di _production stage_, dibutuhkan beberapa perintah untuk mela
 
 ## Kontribusi
 
-Jika kamu ingin berkontribusi pada projek ini, bisa membuka diskusi yang ada [di sini](https://github.com/wearevero/mantis/discussions)
+Jika kamu ingin berkontribusi pada projek ini, bisa membuka diskusi yang ada [di sini](https://github.com/wearevero/morph/discussions)
 
 ## Pemelihara
 - [Krido](https://github.com/yuxeun)
