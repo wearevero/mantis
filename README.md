@@ -1,83 +1,58 @@
-<p align="center">
-<a target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
-</a>
-</p>
+## Mantis
 
+_An beautifull, elegant and simple Veronique's status page — Let's monitoring them all._
 
-# The Veronique's Stack
+![Veronique banner](./banner.png)
 
-***We Believe, Every Piece of Jewerly Tells a Radiant Story.***
+## Motivasi
+Projek ini terbentuk atas dasar rasa ingin tahu kita -sebagai tim yang bertanggung jawab atas semua system yang berjalan- terhadap status masing-masing system yang ada; _apakah berjalan sebagaimana mestinya? atau sedang _down_? atau bagaimana?_
 
-VR is a boilerplate that ready-to-use for production.
-The good news is, this project is build on top of [Laravel](https://laravel.com) — Laravel is a web application framework with expressive, elegant syntax. 
+Dengan dibangunnya system ini, harapannya kita dapat melakukan kegiatan _monitoring_ semua system dengan akurat dan engga ribet.
+ 
+Kalimat di atas adalah cerita singkat dari bagaimana system ***Morph*** ini lahir.
 
-We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development.
+## Teknologi
+- Laravel 10.x
+- Tailwind
+- Vite
 
-## Motivation
+## Persyaratan
+Untuk menjalankan morph di mesin lokal (baca: _`localhost`_), beberapa _tool_ yang dibutuhkan, antara lain:
 
-The motivation behind making this project is to standardize and make it easier to create applications with complex features, by using this project we hope to get it done faster.
+- Web server, seperti:
+    -  `xampp` atau `wampp` (jika menggunakan sistem operasi _Windows_)
+     - `lampp` (jika menggunakan sistem operasi distro _Linux_)
+     - `mampp` (jika menggunakan _MacOs_) ataau mungkin kamu lebih nyaman menggunakan Nginx?
+- `composer` untuk mengurus _dependencies_ yang kita gunakan, yang mana bisa diunduh [di sini](https://getcomposer.org)
+- `php ^8.x` bahasa pemrograman inti dari projek ini (jika menggunakan web server seperti contoh di atas seharusnya sudah _built-in_)
+- JavaScript _runtime_, seperti `Node Js` untuk menjalankan `vite` _module bundler_
 
-## Pre-requisite
+## Menjalankan di server lokal
+Jika persyaratan yang dijabarkan di atas dirasa sudah terpasang, maka bisa langsung menjalankan perojek ini dengan beberapa ritual, seperti:
 
-To be able to run this project, several supporting tools are needed, such as:
+1. Clone repository ini `git clone https://github.com/wearevero/morph.git`
+2. _Copy_ file `env.example` ubah menjadi `.env` dengan perintah `cp .env.example .env`
+3. Setup basis data (_by default_ menggunakan `MySql`)
+4. Jalankan perintah `composer install` untuk mengisntall semua _dependency_ yang dibutuhkan oleh si Laravel
+5. `npm install` untuk menginstall semua _dependency_ yang dibutuhkan untuk _asset_
+6. Lakukan migrasi pada basis data `php artisan migrate`
+7. Jika sudah, generate key dengan perintah `php artisan key:generate`
+8. Terakhir, _launch_ projek dengan perintah `php artisan serve` dan buka peramban dengan _port_ `:8000`
+9. Jalankan perintah `php artisan schedule:work` untuk menjalankan _laravel scheduler_
+10. _Refresh browser 666x_
 
-- Web server i.e: `xampp`, `lampp` or `mampp`
-- Core language: `php ^8.x`
-- JavaScript runtime like: `Node Js`
-- Package manager for php, i.e: `composer`
+## Menjalankan di production
+Untuk menjalankan di _production stage_, dibutuhkan beberapa perintah untuk melakukan optimasi, misal:
+- `composer require --optimize-autoloader --no-dev` untuk "membuang" _dependency_ yang tidak dibutuhkan dalam _production_
+- Jalankan optimasi dengan perintah `php artisan optimize` yang mana akan membuat `cache` untuk `route`, `views` dan `config`
 
-## Dependency & Built-in scaffolding
-1. Laravel UI for manage login & register related thing
-2. Laravel Pint for code styling
-3. Spatie Laravel health for checking the health in app
-4. Tailwindcss for create good-looking interface
+## Kontribusi
 
-## Run development mode
+Jika kamu ingin berkontribusi pada projek ini, bisa membuka diskusi yang ada [di sini](https://github.com/wearevero/mantis/discussions)
 
-1. Clone this project: `git clone https://github.com/wearevero/VR.git`
+## Pemelihara
+- [Krido](https://github.com/yuxeun)
 
-2. Open **double** `bash` in the VR directory: one to run node js the other to run composer engine.
+## Lisensi
 
-3. Install all required php dependencies with the command `composer install --ignore-platform-req=ext-gd` and... wait for the apocalypse, just kidding.
-
-4. On another `bash`, run the command `npm install --legacy-peer-deps` to install the dependencies related to the required assets.
-
-5. Generate key `php artisan key:generate`
-
-6. Make database
-
-7. Copying environment example `cp .env.example .env`
-
-8. Running migration `php artisan migrate`
-
-9. Seed default data `php artisan db:seed`
-
-10. Checking the health? `php artisan health:check`
-
-11. Take a look on your browser at: `127.0.0.1:8000`
-
-## Run the testing
-
-Upsss... there's not testing library to this project.
-
-## Run for production
-1. Install autoloader optimization `composer require --optimize-autoloader --ignore-platform-req=ext-gd`
-
-2. Let's optimize it! `php artisan optimize` 
-
-
-## Code of Conduct
-
-Please review and abide our [Code of Conduct](./CODE_OF_CONDUCT.md).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability, please send an e-mail to me via [kridoveronique@gmail.com](mailto:kridoveronique@gmail.com). All security vulnerabilities will be promptly addressed.
-
-## Maintainer
-
-- [Krido](https://github.com/yuxxeun)
-
-## License
-
-VR is open-sourced software licensed under the [MIT License](./LICENSE).
+Morph adalah _open-sourced software_ yang menggunakan [MIT license](./LICENSE).

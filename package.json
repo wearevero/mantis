@@ -1,4 +1,5 @@
 {
+    "name": "@wearevero/matis",
     "private": true,
     "scripts": {
         "dev": "vite",
