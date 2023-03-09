@@ -1,6 +1,6 @@
 <x-guest-layout title="Status page">
     <div class="text-center items-center justify-center">
-        <p class="text-5xl font-extrabold font-display tracking-wide">👻M<span class="animate animate-ping text-pink-800">O</span>RPH.</p>
+        <p class="text-5xl font-extrabold text-slate-100 font-display tracking-wide">👻M<span class="animate animate-ping text-pink-800">O</span>RPH.</p>
         <p class="text-3xl text-gray-200 tracking-wide font-montreal mt-5">
            Veronique monitoring page.
         </p>
@@ -26,7 +26,7 @@
                             Operational &nbsp; &#10003;
                         <span>
                     @else
-                        <span class="bg-rose-200 backdrop-blur-sm border-rose-300 border text-rose-900 font-montreal px-4 py-1 text-center rounded-xl">
+                        <span class="bg-rose-200 my-auto justify-center backdrop-blur-sm border-rose-300 border text-rose-900 font-montreal px-4 py-1 text-center rounded-xl">
                             Sadly Down &nbsp; &#9747;
                         <span>
                     @endif

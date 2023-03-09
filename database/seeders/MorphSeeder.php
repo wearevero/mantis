@@ -3,13 +3,11 @@
 namespace Database\Seeders;
 
 use Carbon\Carbon;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 class MorphSeeder extends Seeder
 {
-
     public function run(): void
     {
         DB::table('morph')->insert([
@@ -37,21 +35,21 @@ class MorphSeeder extends Seeder
             [
                 'name' => 'Inventaris system',
                 'url' => 'http://10.10.10.4:8000/',
-                'active' => true,
+                'active' => false,
                 'created_at' => Carbon::now()->format('Y-m-d h:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),
             ],
             [
                 'name' => 'Veronique Handbook',
                 'url' => 'http://10.10.10.4:3030',
-                'active' => true,
+                'active' => false,
                 'created_at' => Carbon::now()->format('Y-m-d h:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),
             ],
             [
                 'name' => 'Morph health',
                 'url' => 'http://10.10.10.4:6969/health',
-                'active' => true,
+                'active' => false,
                 'created_at' => Carbon::now()->format('Y-m-d h:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),
             ],

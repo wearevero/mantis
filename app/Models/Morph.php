@@ -8,8 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Morph extends Model
 {
     use HasFactory;
+
     protected $table = 'morph';
+
     protected $guard = [
-        'id'
+        'id',
     ];
 }

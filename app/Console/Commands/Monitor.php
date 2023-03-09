@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Log;
 class Monitor extends Command
 {
     protected $signature = 'uptime:monitor';
+
     protected $description = 'This monitoring command is for ';
 
     public function handle(): void
