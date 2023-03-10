@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "wearevero/morph",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Monitoring system",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {

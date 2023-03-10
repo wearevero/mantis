@@ -33,6 +33,13 @@ class MorphSeeder extends Seeder
                 'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),
             ],
             [
+                'name' => 'Sales system',
+                'url' => 'http://10.10.10.10/sales',
+                'active' => true,
+                'created_at' => Carbon::now()->format('Y-m-d h:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),
+            ],
+            [
                 'name' => 'Inventaris system',
                 'url' => 'http://10.10.10.4:8000/',
                 'active' => false,
