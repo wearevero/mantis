@@ -19,7 +19,14 @@ class MorphSeeder extends Seeder
                 'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),
             ],
             [
-                'name' => 'Silver system',
+                'name' => 'Silver',
+                'url' => 'http://10.10.10.10/silver',
+                'active' => true,
+                'created_at' => Carbon::now()->format('Y-m-d h:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),
+            ],
+            [
+                'name' => 'Payroll & HR system',
                 'url' => 'http://10.10.10.10/silver',
                 'active' => true,
                 'created_at' => Carbon::now()->format('Y-m-d h:i:s'),
@@ -55,7 +62,7 @@ class MorphSeeder extends Seeder
             ],
             [
                 'name' => 'Morph health',
-                'url' => 'http://10.10.10.4:6969/health',
+                'url' => 'http://10.10.11.3:6969/health',
                 'active' => false,
                 'created_at' => Carbon::now()->format('Y-m-d h:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),

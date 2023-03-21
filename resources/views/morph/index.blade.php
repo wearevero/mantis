@@ -22,12 +22,12 @@
                         </span>
                     </span>
                     @if($web->active)
-                        <span class="bg-green-200/80 justify-center items-center my-auto backdrop-blur-sm border-green-300 border font-montreal text-green-900 px-4 py-1 rounded-xl">                    
-                            Operational &nbsp; &#10003;
+                        <span class="bg-green-200/80 flex py-2 justify-center items-center my-auto backdrop-blur-sm border-green-300 border font-montreal text-green-900 px-4 rounded-xl">                    
+                            Operational &nbsp; <x-feathericon-check-circle class="text-green-900"/>
                         <span>
                     @else
-                        <span class="bg-rose-200 my-auto justify-center backdrop-blur-sm border-rose-300 border text-rose-900 font-montreal px-4 py-1 text-center rounded-xl">
-                            Sadly Down &nbsp; &#9747;
+                        <span class="bg-rose-200 flex py-2 items-center my-auto justify-center backdrop-blur-sm border-rose-300 border text-rose-900 font-montreal px-4 text-center rounded-xl">
+                            Sadly Down &nbsp; <x-feathericon-alert-octagon class="text-rose-900"/>
                         <span>
                     @endif
                 </li>
@@ -36,10 +36,8 @@
     </div>
 
     <div class="text-center my-10">
-        <button class="bg-slate-200/80 text-lg backdrop-blur-sm border-slate-300 border font-montreal text-slate-900 px-4 py-1 rounded-lg hover:text-slate-500">
-            <a href={{ route('morph.create') }}>
-                Adding a page &nbsp; &plus;
-            </a>
+        <button class="bg-slate-200/80 items-center align-middle flex mx-auto text-lg backdrop-blur-sm border-slate-300 border font-montreal text-slate-900 cursor-not-allowed px-4 py-2 rounded-lg hover:text-slate-500" disabled>
+                Add system &nbsp; <x-feathericon-plus/>
         </button>
     </div>
 
