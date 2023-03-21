@@ -1,10 +1,15 @@
 <x-guest-layout title="Status page">
     <div class="text-center items-center justify-center">
-        <p class="text-5xl font-extrabold text-slate-100 font-display tracking-wide">👻M<span class="animate animate-ping text-pink-800">O</span>RPH.</p>
-        <p class="text-3xl text-gray-200 tracking-wide font-montreal mt-5">
-           Veronique monitoring page.
+        <p class="text-5xl flex items-center text-center mx-auto justify-center align-middle font-extrabold text-slate-100 font-display tracking-wide">
+            👻M<span class="animate animate-ping text-pink-800">
+                <x-feathericon-radio class="animate animate-ping text-pink-800"/>
+                </span>
+            RPH.
         </p>
-        <p class="font-montreal text-lg text-gray-200 mt-2 tracking-wide">
+        <p class="text-2xl text-gray-200 flex items-center align-middle justify-center tracking-wide font-montreal my-4">
+             Veronique monitoring page.
+        </p>
+        <p class="font-montreal bg-rose-200/20 border-rose-700 w-fit px-4 mx-auto text-lg text-rose-700 border rounded-lg tracking-wide">
             Rendering pages in — {{ number_format(microtime(true) - LARAVEL_START, 2) }} seconds.
         </p>
     </div>
@@ -36,7 +41,7 @@
     </div>
 
     <div class="text-center my-10">
-        <button class="bg-slate-200/80 items-center align-middle flex mx-auto text-lg backdrop-blur-sm border-slate-300 border font-montreal text-slate-900 cursor-not-allowed px-4 py-2 rounded-lg hover:text-slate-500" disabled>
+        <button class="bg-slate-200/30 items-center align-middle flex mx-auto text-lg backdrop-blur-sm border-slate-200 border font-montreal text-slate-700 cursor-not-allowed px-4 py-2 rounded-lg hover:text-slate-500" disabled>
                 Add system &nbsp; <x-feathericon-plus/>
         </button>
     </div>

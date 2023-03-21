@@ -27,7 +27,7 @@ class MorphSeeder extends Seeder
             ],
             [
                 'name' => 'Payroll & HR system',
-                'url' => 'http://10.10.10.10/silver',
+                'url' => 'http://10.10.10.10/payroll',
                 'active' => true,
                 'created_at' => Carbon::now()->format('Y-m-d h:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d h:i:s'),
